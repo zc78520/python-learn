@@ -1,6 +1,9 @@
-# Filename:hello world.py
+#Filename if.py
 
-print('hello world! zhangchao') #print out a string
 
-a=100;b=200 #many line write on a line with ;
-print(a+b)
+
+birth=input('birth_year:')
+if int(birth)<2000:
+   print('00前')
+else：
+   print('00后')
