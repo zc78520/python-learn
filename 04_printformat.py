@@ -14,6 +14,6 @@ line3''')
 print(r'''hello,\nworld''')
 
 print(True)
-print(True and false)
+print(True and False)
 print(5>3)
 print(not True)
