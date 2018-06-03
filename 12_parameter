@@ -1,0 +1,97 @@
+#filename:parameter.py
+
+def power(x)
+    return x*x
+
+a=power(5)
+print(a)
+
+def power(x,n=2)
+    s=1
+    while n>0:
+       n=n-1
+       s=s*x
+    return s
+
+a=power(x,5)
+b=power(x)
+
+def enroll(name,gender,age=6,city='beijing'):
+    print('name:',name)
+    print('gender:',gender)
+    print('age:',age)
+    print('city:',city)
+
+enroll('sarah','F')
+
+
+def add_end(L=None): #moren canshu yiding shi bubianduixiang
+    if L is None:
+       L=[]
+    L.append('END')
+    return L
+
+def calc(numbers):
+    sum=0
+    for n in nmubers:
+        sum=sum+n*n
+    return sum
+
+calc([1,2,3,4])
+
+
+def calc1(*numbers):   #can chaged parameter --tuple
+    sum=0
+    for n in numbers:
+        sum=sum+n*n
+    return sum
+
+
+calc1(1,2)
+calc1(1,35,3)
+calc1()
+
+
+nums=[1,2,3]
+calc1(*nums)
+
+
+def person(name,age,**kw):
+    print('name:',name,'age:',age,'other:',kw)
+
+
+def namelist(*name):
+    print(name)
+
+namelist('zhangchao','zhangdingchen','dinghuiqing')
+namelist()
+
+namelist1=['zhangchao','zhangdingchen']
+namelist(*namelist1)
+
+def namelist1(fathername,motername,kidname='chenchen'):
+    print(fathername,' ',motername,' ',kidname)
+
+namelist1('zhangchao','dinghuiqing')
+
+
+def addrlist(**kw):
+    print(kw)
+
+addrlist(addr1='tiantongyuan',addr2='wangjing',addr3='wuxi')
+    
+
+def multiplication(*numlist)
+    n=len(numlist)-1
+    s=1
+    while n!<0:
+       s=s*numlist[n]
+       n=n-1
+
+    print(s)
+
+multiplication(3)
+multiplication(12,34,55,55)
+
+a=(1,2,3,4)
+multiplication(*a)
